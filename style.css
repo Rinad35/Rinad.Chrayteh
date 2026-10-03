@@ -1,0 +1,172 @@
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #d9d9d9;
+        font-family: Arial, sans-serif;
+      }
+
+      .profile-card {
+        width: 540px;
+        background: #f3f1f1;
+        border-radius: 30px;
+        box-shadow: 0 18px 28px rgba(0, 0, 0, 0.08);
+        padding: 24px 42px 34px;
+        text-align: center;
+      }
+
+      .profile-photo-wrap {
+        width: 230px;
+        height: 230px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        background: #e7c3c7;
+        border: 6px solid #e7c3c7;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0 0 0 2px rgba(230, 176, 184, 0.2);
+      }
+
+      .profile-photo {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 50%;
+      }
+
+      h1 {
+        margin: 8px 0 4px;
+        font-size: 3rem;
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        color: #2d3341;
+        letter-spacing: 0.5px;
+      }
+
+      .job-title {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #6a6d74;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        margin: 20px auto 18px;
+        width: 80%;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #c5b7bb;
+      }
+
+      .divider .heart {
+        color: #cda8ae;
+        font-size: 1.3rem;
+        line-height: 1;
+      }
+
+      .bio {
+        max-width: 420px;
+        margin: 0 auto 20px;
+        font-size: 1.15rem;
+        line-height: 1.5;
+        color: #4c4d53;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        margin-bottom: 28px;
+      }
+
+      .social-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #3a3d46;
+        text-decoration: none;
+      }
+
+      .icon-circle {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: #d8c9d3;
+        color: #2d3341;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+
+      .icon-circle.in {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: -2px;
+      }
+
+      .icon-circle.mail {
+        font-size: 1.5rem;
+      }
+
+      .social-label {
+        font-size: 0.95rem;
+        color: #4b4d54;
+      }
+
+      .connect-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 360px;
+        height: 58px;
+        border: none;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #d0a8b0, #c29aa7);
+        color: #f9f7f7;
+        text-decoration: none;
+        font-size: 1.15rem;
+        font-weight: 700;
+        box-shadow: 0 8px 16px rgba(170, 132, 145, 0.25);
+      }
+
+      .connect-button span {
+        margin-left: 8px;
+      }
+
+      @media (max-width: 600px) {
+        .profile-card {
+          width: min(92vw, 520px);
+          padding: 20px 20px 28px;
+        }
+
+        h1 {
+          font-size: 2.3rem;
+        }
+
+        .social-links {
+          gap: 16px;
+        }
+      }
+  
